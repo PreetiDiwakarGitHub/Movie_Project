@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.contact-container {
+    max-width: 700px; 
+    margin: 50px auto; 
+    padding: 50px;
+    background-color: #ffffff; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+    border-radius: 15px; 
+    text-align: center;
+    transition: transform 0.3s ease; 
+}
+
+.contact-container:hover {
+    transform: translateY(-5px); 
+}
+
+.heading {
+    font-size: 2.5em; 
+    color: #333; 
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.contact-info {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 1.1em;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.form-input,
+.form-textarea {
+    padding: 15px; 
+    font-size: 1.1em;
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    background-color: #f9f9f9; 
+    color: #333;
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    background-color: #ffffff; 
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+.form-textarea {
+    min-height: 120px; 
+    resize: vertical; 
+}
+
+.submit-button {
+    padding: 15px 30px; 
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(90deg, #007bff, #0056b3); 
+    border: none;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-button:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff); 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.submit-button:active {
+    transform: scale(0.98); 
+}

@@ -1,0 +1,18 @@
+.all_image {
+    position: relative;
+    overflow: hidden; 
+    width: 100%; 
+}
+
+.all_image img {
+    height: 35vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: center; 
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.all_image img.fade {
+    opacity: 0;
+}
